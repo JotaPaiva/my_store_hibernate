@@ -7,7 +7,7 @@ Tecnologias: Java, SQL.
 
 Link do Curso: https://cursos.alura.com.br/course/persistencia-jpa-introducao-hibernate
 
-Necessário: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
+Necessário: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j</br>
 Necessário: https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
 
 Espero que gostem!
