@@ -16,7 +16,7 @@ public class CadastroDeProduto {
     public static void main(String[] args) {
 
         Categoria celulares = new Categoria("CELULARES");
-        Produto celular = new Produto("Xiaomi MI9SE","Cor: Azul, Armazenamento: 128GB, Memória RAM: 6GB",new BigDecimal(2000), celulares);
+        Produto celular = new Produto("Samsung Galaxy SE","Cor: Azul, Armazenamento: 128GB, Memória RAM: 6GB",new BigDecimal(2000), celulares);
 
         EntityManager em = JPAUtil.getEntityManager();
         CategoriaDAO categoriaDAO = new CategoriaDAO(em);
@@ -26,7 +26,7 @@ public class CadastroDeProduto {
 
         categoriaDAO.cadastrar(celulares);
         produtoDAO.cadastrar(celular);
-
+        produtoDAO.remover(celular);
         em.getTransaction().commit();
         em.close();
 
